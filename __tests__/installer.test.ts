@@ -46,7 +46,7 @@ https: describe('PyEnvInstaller', () => {
     let error = null;
     try {
       await installer.downloadArchive();
-    } catch (e) {
+    } catch (e: any) {
       error = e.message;
     }
     expect(error).toEqual(
